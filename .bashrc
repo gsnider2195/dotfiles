@@ -120,4 +120,4 @@ fi
 grepr() { grep --color -n -I -r --exclude-dir={project-static,examples,__pycache__,venv,.git,node_modules,build} "$@"; }
 
 export PATH="$HOME/.local/bin:$PATH"
-export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock docker ps
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
