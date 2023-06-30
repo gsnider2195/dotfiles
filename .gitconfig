@@ -3,3 +3,5 @@
 	name = Gary Snider
 [core]
 	editor = vim
+[pull]
+	rebase = false
