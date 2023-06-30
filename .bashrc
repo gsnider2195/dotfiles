@@ -121,3 +121,7 @@ grepr() { grep --color -n -I -r --exclude-dir={project-static,examples,__pycache
 
 export PATH="$HOME/.local/bin:$PATH"
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
