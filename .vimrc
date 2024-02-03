@@ -54,4 +54,7 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 set incsearch
+
+" download https://github.com/vim/colorschemes/blob/master/legacy_colors/delek.vim and put in $HOME/.vim/colors/
 colorscheme delek
+
