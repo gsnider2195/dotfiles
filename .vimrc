@@ -53,6 +53,9 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+set expandtab
+set shiftwidth=4
+set tabstop=4
 set incsearch
 
 " download https://github.com/vim/colorschemes/blob/master/legacy_colors/delek.vim and put in $HOME/.vim/colors/

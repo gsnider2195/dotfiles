@@ -117,6 +117,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-grepr() { grep --color -n -I -r --exclude-dir={project-static,examples,__pycache__,venv,.git,node_modules,build} "$@"; }
+grepr() { grep --color=auto -n -I -r --exclude-dir={project-static,examples,__pycache__,venv,.git,node_modules,build} --exclude={*.map,*.sql} "$@"; }
 
 export PATH="$HOME/.local/bin:$PATH"
