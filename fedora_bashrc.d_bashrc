@@ -1,0 +1,4 @@
+if [ "$PS1" ]; then
+  PS1='${PROMPT_START@P}'"${colorpre}"'${PROMPT_COLOR}'"${colorsuf}"'${PROMPT_USERHOST@P}'"${colorreset}"'${PROMPT_SEPARATOR@P}'"${colorpre}"'${PROMPT_DIR_COLOR:-${PROMPT_COLOR}}'"${colorsuf}"'${PROMPT_DIRECTORY@P}'"${colorpre}"'1;34'"${colorsuf}"'$(__git_ps1 " (%s)")'"${colorreset}"'${PROMPT_END@P}\$'"${colorreset} "
+  grepr() { grep --color=auto -n -I -r --exclude-dir={project-static,examples,__pycache__,venv,.git,node_modules,build} --exclude={*.map,*.sql} "$@"; }
+fi
