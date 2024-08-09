@@ -3,3 +3,5 @@ if [ "$PS1" ]; then
   grepr() { grep --color=auto -n -I -r --exclude-dir={project-static,examples,__pycache__,venv,.git,node_modules,build} --exclude={*.map,*.sql} "$@"; }
   greprh() { grep --color=auto -h -I -r --exclude-dir={project-static,examples,__pycache__,venv,.git,node_modules,build} --exclude={*.map,*.sql} "$@"; }
 fi
+
+export BUILDAH_FORMAT=docker
