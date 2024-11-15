@@ -61,3 +61,4 @@ set incsearch
 " download https://github.com/vim/colorschemes/blob/master/legacy_colors/delek.vim and put in $HOME/.vim/colors/
 colorscheme delek
 
+highlight Search ctermfg=black ctermbg=yellow
